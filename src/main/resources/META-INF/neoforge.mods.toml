@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="baritoneplus"
+version="1.0.0"
+displayName="Baritone Plus"
+description='''
+Addon for Baritone: auto-eat, auto-heal, danger avoidance (creepers, low-health flee)
+and pathing profiles. Client-side only.
+'''
+
+[[dependencies.baritoneplus]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.baritoneplus]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.baritoneplus]]
+modId="baritone"
+type="required"
+versionRange="[1.11.2,)"
+ordering="AFTER"
+side="CLIENT"

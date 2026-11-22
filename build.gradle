@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '1.0.0'
+group = 'dev.baritoneplus'
+
+base {
+    archivesName = 'baritoneplus'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.220'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Compile against Baritone's API only; the real Baritone mod provides it at runtime.
+    compileOnly files('libs/baritone-api-neoforge-1.11.2.jar')
+}
